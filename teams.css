@@ -1,0 +1,10 @@
+.person-card
+{
+    width: 20rem;
+}
+
+.person-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Yatayda ortalar */
+}
