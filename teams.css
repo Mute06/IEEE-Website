@@ -8,3 +8,8 @@
     flex-direction: column;
     align-items: center; /* Yatayda ortalar */
 }
+.person-card .card-img-top {
+    height: 300px; /* Tüm resimler için sabit bir yükseklik belirleyin */
+    object-fit: cover; /* Resmin en-boy oranını koruyarak alanı kaplamasını sağlar */
+    width: 100%;
+}
