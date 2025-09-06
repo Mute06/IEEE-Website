@@ -3,6 +3,30 @@
     transition: transform 0.2s;
 }
 
+
+
 .card:hover {
     transform: scale(1.05);
+}
+
+.upcoming-event {
+    
+    width: 20rem;
+}
+.upcoming-event .card-img-top {
+    height: 300px;;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.past-event{
+    width: 18rem;
+}
+
+.past-event .card-img-top {
+    height: 200px;;
+    width: 100%;
+    object-fit: contain;
+    
 }

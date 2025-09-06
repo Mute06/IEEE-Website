@@ -53,7 +53,7 @@
         <div class = "container">
             <div class = "row justify-content-center g-3">
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card p-3" style="width: 18rem;">
+                    <div class="card p-3 society-image">
                         <img src="img/IEEE-CS_LogoTM-orange.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card p-3" style="width: 18rem;">
+                    <div class="card p-3 society-image">
                         <img src="img/IEEE_RAS_logo_4C_stacked.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card p-3" style="width: 18rem;">
+                    <div class="card p-3 society-image">
                         <img src="img/IEEE-CS_LogoTM-orange.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -79,11 +79,33 @@
             </div>
         </div>
 
+        <!-- Events Section -->
+        <section class="my-2">
+            <div class = "container">
+                <h2 class = "text-center">
+                    Yaklaşan Etkinlikler
+                </h2>
+                <div class = "row justify-content-center align-items-baseline g-3" id = "upcoming-events">
+
+                </div>
+            </div>
+
+            <div class = "container">
+                <h2 class = "text-center">Geçmiş Etkinlikler</h2>
+                <div class = "row justify-content-center align-items-stretch g-3" id = "past-events">
+                    
+                </div>
+            </div>
+
+        </section>
+        <div id = "eventsModals"></div>
+        <!-- Events Section END -->
+
     </main>
 
 
 
-    <footer class = "bg-light text-center py-3 mt-auto fixed-bottom" data-bs-theme = "light">
+    <footer class = "bg-light text-center py-3 mt-auto" data-bs-theme = "light">
         <div class="container">
             <span class="lead me-3">Bizi takip edin:</span>
             <a href="https://www.instagram.com/ieeemetuncc/" target="_blank" class="me-3 text-decoration-none text-dark">
@@ -97,5 +119,6 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="events.js"></script>
 </body>
 </html>
