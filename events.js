@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 eventColumn.innerHTML = `
                     <div class="card mx-auto ${eventStatusClass}">
-                        <img src="${event.image}" class="card-img-top" alt="${event.title}">
+                        <img src="${event.image}" class="card-img-top event-img" alt="${event.title}" style="cursor:pointer;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title text-center">${event.title}</h5>
                             <p class="card-text text-center fw-light">${event.date}</p>
@@ -41,6 +41,24 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 `;
+
+                // Modal açma fonksiyonu
+                eventColumn.querySelector('.event-img').addEventListener('click', function() {
+                    document.getElementById('modalImage').src = event.image;
+                    document.getElementById('modalTitle').textContent = event.title;
+                    document.getElementById('modalDate').textContent = event.date;
+
+                    const modalLink = document.getElementById('modalLink');
+                    if (event.link) {
+                        modalLink.href = event.link;
+                        modalLink.classList.remove('d-none');
+                    } else {
+                        modalLink.classList.add('d-none');
+                    }
+
+                    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    modal.show();
+                });
                 
                 if (isUpcoming) {
                     upcomingEventsContainer.appendChild(eventColumn);
