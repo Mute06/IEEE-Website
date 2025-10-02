@@ -35,3 +35,10 @@
     max-height: 80vh;
     object-fit: contain;
 }
+
+.second-button{
+    background-color: rgb(204, 0, 0);
+    &:hover {
+        background-color: rgb(93, 0, 0);
+    }
+}
