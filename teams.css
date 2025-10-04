@@ -13,3 +13,10 @@
     object-fit: cover; /* Resmin en-boy oranını koruyarak alanı kaplamasını sağlar */
     width: 100%;
 }
+
+.linkedin-icon {
+    transition: transform 0.2s; 
+    &:hover {
+        transform: scale(1.25);
+    }
+}
