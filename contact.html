@@ -44,6 +44,141 @@
     <main class="my-4">
         <div class="container">
             <div class="row g-4 justify-content-center">
+                <!-- Xtreme Competition Kayıt Formu-->
+                <div class="col-12">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <div class="d-flex align-items-center">
+                                <img src="https://i.postimg.cc/GhCnsyPH/ieeextreme.webp" alt="IEEEXtreme Logo" height="40" class="me-3">
+                                <h5 class="mb-0">IEEEXtreme Yarışma Kayıt Formu</h5>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text mb-4">IEEEXtreme programlama yarışmasına katılmak için aşağıdaki formu doldurun. Not: Resmi kayıt için IEEE Global Websitesinden kayıt olmanız gerekmektedir. Bu from, üniversite içerisinde sizin takımınızı takip edebilmemiz ve size yardımcı olabilmemiz için oluşturulmuştur. </p>
+
+                            <form id="xtremeForm">
+                                <div class="row">
+                                    <!-- Takım Kayıt Bilgileri -->
+                                    <div class="col-12">
+                                        <h6 class="text-primary mb-3">Takım Bilgileri</h6>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="teamName" class="form-label">Takım Adı <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="teamName" name="teamName" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="teamSize" class="form-label">Takım Üye Sayısı <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="teamSize" name="teamSize" required>
+                                            <option value="">Seçiniz</option>
+                                            <option value="1">1 Kişi</option>
+                                            <option value="2">2 Kişi</option>
+                                            <option value="3">3 Kişi</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Uye 1  -->
+                                    <div class="col-12 mt-3">
+                                        <h6 class="text-primary mb-3">1. Üye Bilgileri (Takım Kaptanı)</h6>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="member1Name" class="form-label">Ad Soyad <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="member1Name" name="member1Name" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="member1Email" class="form-label">E-posta <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="member1Email" name="member1Email" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="member1Student" class="form-label">IEEE Member ID <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="member1Student" name="member1Student" placeholder="Örn: 12345678" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="member1Phone" class="form-label">Telefon <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control" id="member1Phone" name="member1Phone" required>
+                                    </div>
+
+                                    <!-- Uye 2 -->
+                                    <div class="col-12 mt-3" id="member2Section" style="display: none;">
+                                        <h6 class="text-primary mb-3">2. Üye Bilgileri</h6>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member2NameDiv" style="display: none;">
+                                        <label for="member2Name" class="form-label">Ad Soyad</label>
+                                        <input type="text" class="form-control" id="member2Name" name="member2Name">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member2EmailDiv" style="display: none;">
+                                        <label for="member2Email" class="form-label">E-posta</label>
+                                        <input type="email" class="form-control" id="member2Email" name="member2Email">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member2StudentDiv" style="display: none;">
+                                        <label for="member2Student" class="form-label">IEEE Member ID</label>
+                                        <input type="text" class="form-control" id="member2Student" name="member2Student" placeholder="Örn: 12345678">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member2PhoneDiv" style="display: none;">
+                                        <label for="member2Phone" class="form-label">Telefon</label>
+                                        <input type="tel" class="form-control" id="member2Phone" name="member2Phone">
+                                    </div>
+
+                                    <!-- Uye 3 (max 3 üye)  -->
+                                    <div class="col-12 mt-3" id="member3Section" style="display: none;">
+                                        <h6 class="text-primary mb-3">3. Üye Bilgileri</h6>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member3NameDiv" style="display: none;">
+                                        <label for="member3Name" class="form-label">Ad Soyad</label>
+                                        <input type="text" class="form-control" id="member3Name" name="member3Name">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member3EmailDiv" style="display: none;">
+                                        <label for="member3Email" class="form-label">E-posta</label>
+                                        <input type="email" class="form-control" id="member3Email" name="member3Email">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member3StudentDiv" style="display: none;">
+                                        <label for="member3Student" class="form-label">IEEE Member ID</label>
+                                        <input type="text" class="form-control" id="member3Student" name="member3Student" placeholder="Örn: 12345678">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3" id="member3PhoneDiv" style="display: none;">
+                                        <label for="member3Phone" class="form-label">Telefon</label>
+                                        <input type="tel" class="form-control" id="member3Phone" name="member3Phone">
+                                    </div>
+
+                                    <!-- Additional Information -->
+                                    <div class="col-12 mt-3">
+                                        <h6 class="text-primary mb-3">Ek Bilgiler</h6>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label for="experience" class="form-label">Programlama Deneyimi</label>
+                                        <textarea class="form-control" id="experience" name="experience" rows="3" placeholder="Kullandığınız programlama dilleri ve deneyim seviyeniz..."></textarea>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label for="notes" class="form-label">Notlar / Sorular</label>
+                                        <textarea class="form-control" id="notes" name="notes" rows="2"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100">Kayıt Ol</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="xtremeFormMessage" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- İletişim Formu -->
                 <div class="col-12 col-lg-6">
                     <div class="card h-100">
@@ -51,7 +186,7 @@
                             <h5 class="card-title mb-3">İletişim Formu</h5>
                             <p class="card-text mb-4">Mesajınızı bırakın, en kısa sürede size geri dönüş yapalım.</p>
 
-                            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <form id="contactForm">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Ad Soyad <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="name" name="name" required>
@@ -126,28 +261,110 @@
         </div>
     </main>
 
+    <!-- Supabase JavaScript SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
-        // Supabase configuration DONT SHARE THIS LINKS (url, anon key)
-        const SUPABASE_URL = 'https://fknbnbhdanqilwksftla.supabase.co';    //bu kısım önemli | herhangi bir şekilde internette paylaşmayın gptye atmayın
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZrbmJuYmhkYW5xaWx3a3NmdGxhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzOTU1NDksImV4cCI6MjA3NDk3MTU0OX0.ZbF_jGclYqIHh61ZdLEn1jw6mEKQlYNBr-gkQQ44DYo';  //bunu da atmayın hiçbir yere
+
+        // SUPABASE
+
+        // bu keyleri paylasmayin GPTYE ATMAYIN
+        const SUPABASE_URL = 'https://fknbnbhdanqilwksftla.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZrbmJuYmhkYW5xaWx3a3NmdGxhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzOTU1NDksImV4cCI6MjA3NDk3MTU0OX0.ZbF_jGclYqIHh61ZdLEn1jw6mEKQlYNBr-gkQQ44DYo';
 
         const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-        //form submission
-        const form = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
+        // takım kac kisi
+        document.getElementById('teamSize').addEventListener('change', function() {
+            const teamSize = parseInt(this.value);
 
-        form.addEventListener('submit', async function(e) {
+            // Member 2
+            const member2Elements = ['member2Section', 'member2NameDiv', 'member2EmailDiv', 'member2StudentDiv', 'member2PhoneDiv'];
+            member2Elements.forEach(id => {
+                document.getElementById(id).style.display = teamSize >= 2 ? 'block' : 'none';
+            });
+
+            // Member 3
+            const member3Elements = ['member3Section', 'member3NameDiv', 'member3EmailDiv', 'member3StudentDiv', 'member3PhoneDiv'];
+            member3Elements.forEach(id => {
+                document.getElementById(id).style.display = teamSize >= 3 ? 'block' : 'none';
+            });
+        });
+
+        // XTREME FORM SUBMISSION
+        const xtremeForm = document.getElementById('xtremeForm');   //xtremeFrom variable
+        const xtremeFormMessage = document.getElementById('xtremeFormMessage');
+
+        xtremeForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
             // Show loading state
-            const submitButton = form.querySelector('button[type="submit"]');
+            const submitButton = xtremeForm.querySelector('button[type="submit"]');
             const originalButtonText = submitButton.innerHTML;
             submitButton.disabled = true;
-            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Gönderiliyor...';
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Kaydediliyor...';
 
-            //dataların alınması / get the data
+            // Collect form data
+            const formData = {
+                team_name: document.getElementById('teamName').value,
+                team_size: parseInt(document.getElementById('teamSize').value),
+                member1_name: document.getElementById('member1Name').value,
+                member1_email: document.getElementById('member1Email').value,
+                member1_student_id: document.getElementById('member1Student').value,
+                member1_phone: document.getElementById('member1Phone').value,
+                member2_name: document.getElementById('member2Name').value || null,
+                member2_email: document.getElementById('member2Email').value || null,
+                member2_student_id: document.getElementById('member2Student').value || null,
+                member2_phone: document.getElementById('member2Phone').value || null,
+                member3_name: document.getElementById('member3Name').value || null,
+                member3_email: document.getElementById('member3Email').value || null,
+                member3_student_id: document.getElementById('member3Student').value || null,
+                member3_phone: document.getElementById('member3Phone').value || null,
+                experience: document.getElementById('experience').value || null,
+                notes: document.getElementById('notes').value || null,
+                created_at: new Date().toISOString()
+            };
+
+            try {
+                // Insert into Supabase
+                const { data, error } = await supabase
+                    .from('xtreme_registrations')
+                    .insert([formData]);
+
+                if (error) throw error;
+
+                // Success message
+                xtremeFormMessage.innerHTML = '<div class="alert alert-success alert-dismissible fade show">' +
+                    '<strong>Başarılı!</strong> IEEEXtreme kayıtınız alındı. En kısa sürede size geri dönüş yapacağız.' +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>' +
+                    '</div>';
+                xtremeForm.reset();
+
+            } catch (error) {
+                console.error('Error:', error);
+                xtremeFormMessage.innerHTML = '<div class="alert alert-danger alert-dismissible fade show">' +
+                    '<strong>Hata!</strong> ' + error.message + ' Lütfen tekrar deneyin.' +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>' +
+                    '</div>';
+            } finally {
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+            }
+        });
+
+        // CONTACT FORM SUBMISSION
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            //yükleniyor animasyonu
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Gönderiliyor...';
+
+            //data collection
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
@@ -157,29 +374,27 @@
             };
 
             try {
-                //supabasele bağlantı
+                // Insert into Supabase
                 const { data, error } = await supabase
                     .from('contact_messages')
                     .insert([formData]);
 
                 if (error) throw error;
 
-                //success display message
-                formMessage.innerHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                // Success message
+                formMessage.innerHTML = '<div class="alert alert-success alert-dismissible fade show">' +
                     'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.' +
-                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>' +
                     '</div>';
-                form.reset();
+                contactForm.reset();
 
             } catch (error) {
-                //error display message
                 console.error('Error:', error);
-                formMessage.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                formMessage.innerHTML = '<div class="alert alert-danger alert-dismissible fade show">' +
                     'Bir hata oluştu: ' + error.message + ' Lütfen tekrar deneyin.' +
-                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>' +
                     '</div>';
             } finally {
-                //formu resetliyor / resets the form
                 submitButton.disabled = false;
                 submitButton.innerHTML = originalButtonText;
             }

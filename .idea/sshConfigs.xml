@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="ieee.ncc.metu.edu.tr" id="5d6b1aa8-a0ca-498a-93f3-24debea0da8d" port="22" nameFormat="DESCRIPTIVE" username="wwwkieee" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
