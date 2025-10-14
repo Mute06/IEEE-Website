@@ -1,0 +1,26 @@
+.upcoming-event {
+    
+    width: 20rem;
+}
+.upcoming-event .card-img-top {
+    height: 400px;;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.past-event{
+    width: 18rem;
+}
+
+.past-event .card-img-top {
+    height: 300px;;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+#modalImage {
+    max-height: 80vh;
+    object-fit: contain;
+}
