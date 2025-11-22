@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımızda - IEEE ODTÜ KKK</title>
+    <title data-i18n="about.pageTitle">Hakkımızda - IEEE ODTÜ KKK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -19,47 +19,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Ekibimiz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="teknofest.html">Teknofest</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">İletişim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">Hakkımızda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calender.html">Takvim</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html" data-i18n="nav.team">Ekibimiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teknofest.html" data-i18n="nav.teknofest">Teknofest</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calender.html" data-i18n="nav.calendar">Takvim</a></li>
                 </ul>
+                <div class="d-flex ms-md-3 mt-2 mt-md-0">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-lang-toggle id="langToggle"></button>
+                </div>
             </div>
         </div>
     </nav>
     <hr class="border-dark border-2 my-0">
 
     <header class="text-center py-5">
-        <h1>Hakkımızda</h1>
-        <p class="text-muted">"Inspire. Innovate. Impact."</p>
+        <h1 data-i18n="about.headerTitle">Hakkımızda</h1>
+        <p class="text-muted" data-i18n="about.headerTagline">"Inspire. Innovate. Impact."</p>
     </header>
 
     <main class="container my-5">
 
         
-        <div class="row mb-5">
-            <div class="col-md-6 mb-3 mb-md-0">
-                <img src="https://i.postimg.cc/kgxpXSXv/ieee-team-1.jpg" class="img-fluid rounded shadow" alt="IEEE Etkinlik 1">
-                <p class="text-center">Yönetim Kurulu</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://i.postimg.cc/rwSPF4Ff/ieee-team-2.jpg" class="img-fluid rounded shadow" alt="IEEE Etkinlik 2">
-            </div>
-        </div>
+
 
 
         <!-- Tarihçe -->
@@ -67,10 +50,8 @@
             <div class="row align-items-center">
                 <!-- Yazı -->
                 <div class="col-md-6">
-                    <h2>Tarihçemiz</h2>
-                    <p>
-                        IEEE METU NCC, <strong>7 Mart 2011</strong> tarihinde Ali Muhtaroğlu Hocamız, Furkan Ercan ve ekibi tarafından kurulmuştur. Topluluğumuz, öğrencilerin mühendislik, teknoloji ve yenilik alanlarında gelişimini desteklemeyi amaçlayan aktif bir öğrenci organizasyonudur.
-                    </p>
+                    <h2 data-i18n="about.historyTitle">Tarihçemiz</h2>
+                    <p data-i18n="about.historyParagraph">IEEE METU NCC, <strong>7 Mart 2011</strong> tarihinde Ali Muhtaroğlu Hocamız, Furkan Ercan ve ekibi tarafından kurulmuştur. Topluluğumuz, öğrencilerin mühendislik, teknoloji ve yenilik alanlarında gelişimini desteklemeyi amaçlayan aktif bir öğrenci organizasyonudur.</p>
                 </div>
 
                 <!-- Carousel -->
@@ -102,10 +83,8 @@
 
         <!-- Alt Topluluklar -->
         <section class="mb-5">
-            <h2>Alt Topluluklar</h2>
-            <p>
-                IEEE METU NCC bünyesinde <strong>RAS</strong> (Robotics & Automation Society), <strong>AESS</strong> (Aerospace & Electronic Systems Society) ve <strong>CS</strong> (Computer Society) olmak üzere dört aktif alt topluluk bulunmaktadır. Her bir alt topluluk, kendi ilgi alanlarına yönelik teknik eğitimler, seminerler, atölye çalışmaları ve sosyal etkinlikler düzenlemektedir.
-            </p>
+            <h2 data-i18n="about.subsocietiesTitle">Alt Topluluklar</h2>
+            <p data-i18n="about.subsocietiesParagraph">IEEE METU NCC bünyesinde <strong>RAS</strong> (Robotics & Automation Society), <strong>AESS</strong> (Aerospace & Electronic Systems Society) ve <strong>CS</strong> (Computer Society) olmak üzere dört aktif alt topluluk bulunmaktadır. Her bir alt topluluk, kendi ilgi alanlarına yönelik teknik eğitimler, seminerler, atölye çalışmaları ve sosyal etkinlikler düzenlemektedir.</p>
 
             <div class="row g-3 mt-3">
                 <div class="col-md-6 col-lg-3">
@@ -137,19 +116,17 @@
 
         <!-- Etkinlikler -->
         <section class="mb-5">
-            <h2>Etkinlikler ve Yarışmalar</h2>
-            <p>
-                Topluluğumuz ayrıca <strong>TEKNOFEST</strong> gibi ulusal teknoloji yarışmalarına düzenli olarak katılmakta ve üniversitemizi gururla temsil etmektedir. Bunun yanında IEEE METU NCC, teknik bilgi paylaşımını teşvik eden etkinliklerin yanı sıra sosyal dayanışmayı güçlendiren projelere de önem verir.
-            </p>
+            <h2 data-i18n="about.eventsTitle">Etkinlikler ve Yarışmalar</h2>
+            <p data-i18n="about.eventsParagraph">Topluluğumuz ayrıca <strong>TEKNOFEST</strong> gibi ulusal teknoloji yarışmalarına düzenli olarak katılmakta ve üniversitemizi gururla temsil etmektedir. Bunun yanında IEEE METU NCC, teknik bilgi paylaşımını teşvik eden etkinliklerin yanı sıra sosyal dayanışmayı güçlendiren projelere de önem verir.</p>
         </section>
 
         <!-- Vizyon -->
         <section class="mb-5">
-            <h2>Vizyonumuz</h2>
-            <p>
-                IEEE METU NCC, <strong>"Inspire. Innovate. Impact."</strong> vizyonuyla, öğrencilerin hem teknik hem de liderlik becerilerini geliştirebileceği bir ortam sunmaya devam etmektedir.
-            </p>
+            <h2 data-i18n="about.visionTitle">Vizyonumuz</h2>
+            <p data-i18n="about.visionParagraph">IEEE METU NCC, <strong>"Inspire. Innovate. Impact."</strong> vizyonuyla, öğrencilerin hem teknik hem de liderlik becerilerini geliştirebileceği bir ortam sunmaya devam etmektedir.</p>
         </section>
     </main>
+    <script src="https://unpkg.com/i18next@23.11.2/dist/umd/i18next.min.js"></script>
+    <script src="i18n.js"></script>
 </body>
 </html>

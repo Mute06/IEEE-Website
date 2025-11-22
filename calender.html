@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takvim</title>
+    <title data-i18n="calendar.pageTitle">Takvim</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="event-styles.css">
@@ -21,34 +21,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="index.html">Ana Sayfa</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="team.html">Ekibimiz</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="teknofest.html">Teknofest</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="contact.html">İletişim</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="about.html">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="calender.html">Takvim</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html" data-i18n="nav.team">Ekibimiz</a></li>
+            <li class="nav-item"><a class="nav-link" href="teknofest.html" data-i18n="nav.teknofest">Teknofest</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="calender.html" data-i18n="nav.calendar">Takvim</a></li>
         </ul>
+        <div class="d-flex ms-md-3 mt-2 mt-md-0">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-lang-toggle id="langToggle"></button>
+        </div>
         </div>
     </div>
     </nav>
     <hr class="border-dark border-2 my-0">
 
     <header class = "text-center">
-        <h1 class = "display-5 my-4">
-            IEEE Etkinlik Takvimi
-        </h1>
+        <h1 class = "display-5 my-4" data-i18n="calendar.headerTitle">IEEE Etkinlik Takvimi</h1>
     </header>
 
     <main class="container my-5">
@@ -56,7 +45,7 @@
             <div class="col-lg-8">
                 <div class="card shadow">
                     <div class="card-header bg-primary text-white text-center">
-                        <h4>IEEE Etkinlik Takvimi</h4>
+                        <h4 data-i18n="calendar.headerTitle">IEEE Etkinlik Takvimi</h4>
                     </div>
                     <div class="card-body p-0">
                         <div class="ratio ratio-16x9">
@@ -71,16 +60,14 @@
               <!-- Events Section -->
         <section class="my-3">
             <div class = "container">
-                <h2 class = "text-center my-4">
-                    Duyurular & Etkinlikler
-                </h2>
+                <h2 class = "text-center my-4" data-i18n="section.announcements">Duyurular & Etkinlikler</h2>
                 <div class = "row justify-content-center align-items-baseline g-3" id = "upcoming-events">
 
                 </div>
             </div>
 
             <div class = "container">
-                <h2 class = "text-center">Geçmiş Etkinlikler</h2>
+                <h2 class = "text-center" data-i18n="section.pastEvents">Geçmiş Etkinlikler</h2>
                 <div class = "row justify-content-center align-items-stretch g-3" id = "past-events">
                     
                 </div>
@@ -102,7 +89,7 @@
                 <img id="modalImage" src="" alt="Etkinlik Görseli" class="img-fluid w-100 mb-3">
                 <h5 id="modalTitle"></h5>
                 <p id="modalDate"></p>
-                <a id="modalLink" href="#" target="_blank" class="btn btn-primary d-none mb-2">Keşfet</a>
+                <a id="modalLink" href="#" target="_blank" class="btn btn-primary d-none mb-2" data-i18n="modal.explore">Keşfet</a>
             </div>
             </div>
         </div>
@@ -111,7 +98,7 @@
 
     <footer class = "bg-light text-center mt-5 py-3 ">
         <div class="container">
-            <span class="lead me-3">Bizi takip edin:</span>
+            <span class="lead me-3" data-i18n="footer.follow">Bizi takip edin:</span>
             <a href="https://www.instagram.com/ieeemetuncc/" target="_blank" class="me-3 text-decoration-none text-dark">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" height="40" class="me-1">
             </a>
@@ -121,5 +108,7 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/i18next@23.11.2/dist/umd/i18next.min.js"></script>
+    <script src="i18n.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IEEE Ekibi</title>
+    <title data-i18n="team.pageTitle">IEEE Ekibi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="teams.css">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
@@ -21,38 +21,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="index.html">Ana Sayfa</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="team.html">Ekibimiz</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="teknofest.html">Teknofest</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="contact.html">İletişim</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="about.html">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="calender.html">Takvim</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="team.html" data-i18n="nav.team">Ekibimiz</a></li>
+            <li class="nav-item"><a class="nav-link" href="teknofest.html" data-i18n="nav.teknofest">Teknofest</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li class="nav-item"><a class="nav-link" href="calender.html" data-i18n="nav.calendar">Takvim</a></li>
         </ul>
+        <div class="d-flex ms-md-3 mt-2 mt-md-0">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-lang-toggle id="langToggle"></button>
+        </div>
         </div>
     </div>
     </nav>
     <hr class="border-dark border-2 my-0">
 
     <header class = "text-center mt-2">
-        <h2>
-            Yönetim Kurulu
-        </h2>
+        <h2 data-i18n="team.boardTitle">Yönetim Kurulu</h2>
     </header>
 
 
     <main>
+        <div class="row mb-4 mx-5">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <img src="https://i.postimg.cc/JzZZfc7v/ieee-edited.jpg" class="img-fluid rounded shadow" alt="IEEE Etkinlik 1">
+                
+            </div>
+            <div class="col-md-6">
+                <img src="https://i.postimg.cc/rwSPF4Ff/ieee-team-2.jpg" class="img-fluid rounded shadow" alt="IEEE Etkinlik 2">
+            </div>
+        </div>
+
         <div class = "container my-4">
             <div class = "row justify-content-center g-5">
                 <div class="col-12 col-sm-6 col-md-4  d-flex justify-content-center">
@@ -60,7 +59,7 @@
                         <img src="https://i.postimg.cc/RFqv5XVc/mehmet-alp.jpg" loading="lazy" class="card-img-top" alt="Mehmet Alp">
                         <div class="card-body">
                             <h5 class= "card-title">Mehmet Alp Boza</h5>
-                            <p class = "card-text">Başkan</p>
+                            <p class = "card-text" data-i18n="team.role.president">Başkan</p>
                             <a href="https://www.linkedin.com/in/mehmet-alp-boza-8a47a819b/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -72,7 +71,7 @@
                         <img src="https://i.postimg.cc/wv3980TX/mert.jpg" loading="lazy" class="card-img-top" alt="Mert Kalkancı">
                         <div class="card-body">
                             <h5 class="card-title">Mert Kalkancı</h5>
-                            <p class = "card-text">Başkan Yardımcısı</p>
+                            <p class = "card-text" data-i18n="team.role.vicePresident">Başkan Yardımcısı</p>
                             <a href="https://www.linkedin.com/in/mert-kalkanc%C4%B1/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -84,7 +83,7 @@
                         <img src="https://i.postimg.cc/xCq9DtT3/umut.jpg" loading="lazy" class="card-img-top" alt="Umut Kanıbir">
                         <div class="card-body">
                             <h5 class="card-title">Umut Kanıbir</h5>
-                            <p class = "card-text">Computer Society Başkanı</p>
+                            <p class = "card-text" data-i18n="team.role.csChair">Computer Society Başkanı</p>
                             <a href="https://www.linkedin.com/in/umut-kan%C4%B1bir/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -96,7 +95,7 @@
                         <img src="https://i.postimg.cc/9Mzc5JFT/ece.jpg" loading="lazy" class="card-img-top" alt="Ece Elbuğa">
                         <div class="card-body">
                             <h5 class="card-title">Ece Elbuğa</h5>
-                            <p class = "card-text">Başkan Yardımcısı</p>
+                            <p class = "card-text" data-i18n="team.role.vicePresident">Başkan Yardımcısı</p>
                             <a href="https://www.linkedin.com/in/ece-e-3bb894323/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -108,7 +107,7 @@
                         <img src="https://i.postimg.cc/0Qr9Rc2G/franklyn.jpg" loading="lazy" class="card-img-top" alt="Frank Urama">
                         <div class="card-body">
                             <h5 class="card-title">Franklyn Urama</h5>
-                            <p class = "card-text">Genel Sekreter</p>
+                            <p class = "card-text" data-i18n="team.role.secretary">Genel Sekreter</p>
                             <a href="https://www.linkedin.com/in/frank-urama/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -120,7 +119,7 @@
                         <img src="https://i.postimg.cc/FR1h5Dsg/suleyman.jpg" loading="lazy" class="card-img-top" alt="Süleyman Cengiz">
                         <div class="card-body">
                             <h5 class= "card-title">Süleyman Cengiz</h5>
-                            <p class = "card-text">AESS Başkanı</p>
+                            <p class = "card-text" data-i18n="team.role.aessChair">AESS Başkanı</p>
                             <a href="https://www.linkedin.com/in/suleyman-cengiz-aerospace/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -132,7 +131,7 @@
                         <img src="https://i.postimg.cc/NFfNxR2W/kayra.jpg" loading="lazy" class="card-img-top" alt="Kayra Kağan Özkan">
                         <div class="card-body">
                             <h5 class= "card-title">Kayra Kağan Özkan</h5>
-                            <p class = "card-text">RAS Başkanı</p>
+                            <p class = "card-text" data-i18n="team.role.rasChair">RAS Başkanı</p>
                             <a href="https://www.linkedin.com/in/kayra-ka%C4%9Fan-%C3%B6zkan-a801bb26a/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -144,7 +143,7 @@
                         <img src="https://i.postimg.cc/4xCp2h5V/Kerem.jpg" loading="lazy" class="card-img-top" alt="Kerem Duranlı">
                         <div class="card-body">
                             <h5 class= "card-title">Kerem Duranlı</h5>
-                            <p class = "card-text">Finans ve Sponsorluk Koordinatörü</p>
+                            <p class = "card-text" data-i18n="team.role.financeCoordinator">Finans ve Sponsorluk Koordinatörü</p>
                             <a href="https://www.linkedin.com/in/kerem-duranl%C4%B1-477a01200/" target="_blank" class=" text-decoration-none text-dark">
                             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/linkedin.svg" alt="LinkedIn" height="30" class="me-1 linkedin-icon">
                             </a>
@@ -156,7 +155,7 @@
                         <img src="https://i.postimg.cc/yN8y43JY/sila.jpg" loading="lazy" class="card-img-top" alt="Kerem Duranlı">
                         <div class="card-body">
                             <h5 class= "card-title">Sıla İl</h5>
-                            <p class = "card-text">Denetim Kurulu Üyesi</p>
+                            <p class = "card-text" data-i18n="team.role.auditBoard">Denetim Kurulu Üyesi</p>
                         </div>
                     </div>
                 </div>
@@ -170,7 +169,7 @@
 
     <footer class = "bg-light text-center mt-5 py-3 ">
         <div class="container">
-            <span class="lead me-3">Bizi takip edin:</span>
+            <span class="lead me-3" data-i18n="footer.follow">Bizi takip edin:</span>
             <a href="https://www.instagram.com/ieeemetuncc/" target="_blank" class="me-3 text-decoration-none text-dark">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" height="40" class="me-1">
             </a>
@@ -180,5 +179,7 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/i18next@23.11.2/dist/umd/i18next.min.js"></script>
+    <script src="i18n.js"></script>
 </body>
 </html>
