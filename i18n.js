@@ -44,7 +44,7 @@ function setLangToggleLabel() {
   const toggle = document.querySelector('[data-lang-toggle]');
   if (!toggle) return;
   // Show the next language code as label
-  toggle.textContent = i18next.language === 'tr' ? 'EN' : 'TR';
+  toggle.textContent = i18next.language === 'tr' ? 'TR' : 'EN';
 }
 
 document.addEventListener('click', (e) => {
